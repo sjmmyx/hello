@@ -1,4 +1,40 @@
+body {
+    TEXT-ALIGN: center;
+}
+
 #nav {
     background: #f1ee06;
-    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 200px;
+    height: 100px;
+    margin-left: -100px;
+    margin-top: -50px;
 }
+
+.container{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:rgb(63, 247, 7);
+    text-align:center;
+    font-size:0;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .container::after{
+    content:'';
+    display: inline-block;
+    vertical-align: middle;
+    height:100%;
+  }
+  .dialog{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    font-size:44px;
+    white-space: nowrap;
+  }
